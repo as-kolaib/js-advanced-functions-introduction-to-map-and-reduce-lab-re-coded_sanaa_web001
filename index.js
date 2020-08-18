@@ -16,9 +16,9 @@ function reduceToTotal(sourceArray, startingPoint = 0){
 }
 function reduceToAllTrue(src) {
   src.reduce((acc) => {
-    if(!acc) {return false
+    if(!acc) {return false;
   }
-  return true
+  return true;
   })
   for (let i = 0; i < src.length; i++ ) {
     if (!src[i]) return false
