@@ -16,9 +16,9 @@ function reduceToTotal(sourceArray, startingPoint = 0){
 }
 function reduceToAllTrue(src) {
   src.reduce((acc ,bol) => {
-    if(acc && bol) {return false;
+    if(acc && bol) {return true;
   }
-  return true;
+  return false;
   })
 }
 
