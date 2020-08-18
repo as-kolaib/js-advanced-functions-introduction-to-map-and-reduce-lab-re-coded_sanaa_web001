@@ -28,6 +28,7 @@ function reduceToAllTrue(sourceArray) {
   }
   return true;
 }
+
 function reduceToAnyTrue(sourceArray) {
   for(const element in sourceArray) {
     if(sourceArray[element]) return true;
