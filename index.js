@@ -20,10 +20,6 @@ function reduceToAllTrue(src) {
   }
   return true;
   })
-  for (let i = 0; i < src.length; i++ ) {
-    if (!src[i]) return false
-  }
-  return true
 }
 
 function reduceToAnyTrue(src) {
