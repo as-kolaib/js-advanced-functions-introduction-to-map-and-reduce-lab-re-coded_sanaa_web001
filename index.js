@@ -23,7 +23,7 @@ function reduceToTotal(sourceArray, startingPoint = 0){
 // }
 
 function reduceToAllTrue(sourceArray) {
-sourceArray.reduce((acc) => { if(!acc) return true;
+sourceArray.reduce((acc,val) => { if(!acc && bol) return true;
   return false;} , true )
 }
 
