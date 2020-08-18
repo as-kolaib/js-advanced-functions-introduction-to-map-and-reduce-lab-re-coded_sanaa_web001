@@ -14,17 +14,12 @@ function mapToSquare(sourceArray) {
 function reduceToTotal(sourceArray, startingPoint = 0){ 
   return sourceArray.reduce((acc ,cur ) => acc + cur , startingPoint );
 }
-function reduceToAllTrue(src) {
-  src.reduce((acc ,bol) => {
-    if(acc && bol) {return true;
-  }
-  return false;
-  })
+function reduceToAllTrue(sourceArray) {
+  return sourceArray.reduce((acc ) => {if(!acc) return false ;return true
+  }, true); 
 }
 
-// function reduceToAnyTrue(src) {
-//   for (let i = 0; i < src.length; i++ ) {
-//     if (src[i]) return true
-//   }
-//   return false
-// }
+function reduceToAnyTrue(sourceArray) {
+  return sourceArray.reduce((acc ) => {if(!acc) return false ; return false
+  }); 
+}
