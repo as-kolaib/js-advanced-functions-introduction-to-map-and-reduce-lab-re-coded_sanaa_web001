@@ -22,9 +22,9 @@ function reduceToAllTrue(src) {
   })
 }
 
-function reduceToAnyTrue(src) {
-  for (let i = 0; i < src.length; i++ ) {
-    if (src[i]) return true
-  }
-  return false
-}
+// function reduceToAnyTrue(src) {
+//   for (let i = 0; i < src.length; i++ ) {
+//     if (src[i]) return true
+//   }
+//   return false
+// }
