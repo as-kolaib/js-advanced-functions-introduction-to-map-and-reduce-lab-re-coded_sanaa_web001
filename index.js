@@ -14,12 +14,14 @@ function mapToSquare(sourceArray) {
 function reduceToTotal(sourceArray, startingPoint = 0){ 
   return sourceArray.reduce((acc ,cur ) => acc + cur , startingPoint );
 }
-function reduceToAllTrue(sourceArray) {
-  return sourceArray.reduce((acc ) => {if(!acc) return false ;return true
-  }, true); 
+function reduceToAnyTrue(arr)
+{
+  return arr.reduce((items, value) => items || Boolean(value), true);
+
 }
 
-function reduceToAnyTrue(sourceArray) {
-  return sourceArray.reduce((acc ) => {if(!acc) return false ; return false
-  }); 
+function reduceToAnyTrue(arr)
+{
+  return arr.reduce((items, value) => items || Boolean(value),false);
+
 }
