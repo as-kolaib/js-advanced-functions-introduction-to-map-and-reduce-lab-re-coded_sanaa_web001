@@ -23,10 +23,9 @@ function reduceToTotal(sourceArray, startingPoint = 0){
 // }
 
 function reduceToAllTrue(sourceArray) {
-  for(const element in sourceArray) {
-    if(!sourceArray[element]) return false;
+sourceArray.reduce((acc) =>{  if(sourceArray[element]) return true;
   }
-  return true;
+  return false;} )
 }
 
 function reduceToAnyTrue(sourceArray) {
