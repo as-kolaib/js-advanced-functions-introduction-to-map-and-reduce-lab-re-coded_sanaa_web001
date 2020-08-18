@@ -15,8 +15,8 @@ function reduceToTotal(sourceArray, startingPoint = 0){
   return sourceArray.reduce((acc ,cur ) => acc + cur , startingPoint );
 }
 function reduceToAllTrue(src) {
-  src.reduce((acc) => {
-    if(!acc) {return false;
+  src.reduce((acc ,bol) => {
+    if(acc && bol) {return false;
   }
   return true;
   })
