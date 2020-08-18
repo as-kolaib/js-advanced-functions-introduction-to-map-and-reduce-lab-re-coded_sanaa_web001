@@ -15,14 +15,16 @@ function reduceToTotal(sourceArray, startingPoint = 0){
   return sourceArray.reduce((acc ,cur ) => acc + cur , startingPoint );
 }
 
-function reduceToAnyTrue(arr)
-{
-  return arr.reduce((items, value) => items || Boolean(value), true);
-
+function reduceToAllTrue(sourceArray) {
+  for(const element in sourceArray) {
+    if(!sourceArray[element]) return false;
+  }
+  return true;
 }
 
-function reduceToAnyTrue(arr)
-{
-  return arr.reduce((items, value) => items || Boolean(value),false);
-
+function reduceToAnyTrue(sourceArray) {
+  for(const element in sourceArray) {
+    if(sourceArray[element]) return true;
+  }
+  return false;
 }
