@@ -16,7 +16,7 @@ function reduceToTotal(sourceArray, startingPoint = 0){
 }
 
 function reduceToAllTrue(sourceArray) {
-    return sourceArray.reduce((acc, val) => if(acc && Boolean(val)), true);
+    return sourceArray.reduce((acc, val) => acc && Boolean(val), true);
 }
 
 function reduceToAnyTrue(sourceArray) {
